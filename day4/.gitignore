@@ -1,0 +1,17 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore user-specific files
+*.user
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.userprefs
+*.csproj.user
+*.sln.docstates
