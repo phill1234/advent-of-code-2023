@@ -45,6 +45,8 @@ if __name__ == '__main__':
             start_range, end_range = seed_ranges.pop()
             for translation_entry in translation_map:
                 overlap_start = max(start_range, translation_entry[1])
+
+                # 14 - 18 und 20 - 22
                 overlap_end = min(end_range, translation_entry[1] + translation_entry[2])
                 if overlap_start < overlap_end:
                     overlap_locations.append((overlap_start - translation_entry[1] + translation_entry[0],
